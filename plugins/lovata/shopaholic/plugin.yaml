@@ -1,0 +1,80 @@
+plugin:
+    name: 'lovata.shopaholic::lang.plugin.name'
+    description: 'lovata.shopaholic::lang.plugin.description'
+    author: Lovata
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    shopaholic-menu-main:
+        label: 'lovata.shopaholic::lang.menu.main'
+        url: lovata/shopaholic/products
+        icon: icon-th-large
+        permissions:
+            - 'shopaholic-menu-*'
+        sideMenu:
+            shopaholic-menu-products:
+                label: 'lovata.shopaholic::lang.menu.product'
+                url: lovata/shopaholic/products
+                icon: icon-book
+                order: 100
+                permissions:
+                    - shopaholic-menu-product
+            shopaholic-menu-categories:
+                label: 'lovata.shopaholic::lang.menu.categories'
+                url: lovata/shopaholic/categories
+                icon: icon-sitemap
+                order: 200
+                permissions:
+                    - shopaholic-menu-category
+            shopaholic-menu-brands:
+                label: 'lovata.shopaholic::lang.menu.brands'
+                url: lovata/shopaholic/brands
+                icon: icon-star-o
+                order: 300
+                permissions:
+                    - shopaholic-menu-brand
+    shopaholic-menu-promo:
+        label: 'lovata.shopaholic::lang.menu.promo'
+        url: lovata/shopaholic/promoblocks
+        icon: oc-icon-money
+        permissions:
+            - 'shopaholic-menu-promo-block'
+        sideMenu:
+            shopaholic-menu-promo-block:
+                label: 'lovata.shopaholic::lang.menu.promo_block'
+                url: lovata/shopaholic/promoblocks
+                icon: oc-icon-line-chart
+                order: 100
+                permissions:
+                    - shopaholic-menu-promo-block
+permissions:
+    shopaholic-menu-category:
+        tab: 'lovata.shopaholic::lang.tab.permissions'
+        label: 'lovata.shopaholic::lang.permission.category'
+    shopaholic-menu-brand:
+        tab: 'lovata.shopaholic::lang.tab.permissions'
+        label: 'lovata.shopaholic::lang.permission.brand'
+    shopaholic-menu-product:
+        tab: 'lovata.shopaholic::lang.tab.permissions'
+        label: 'lovata.shopaholic::lang.permission.product'
+    shopaholic-settings:
+        tab: 'lovata.shopaholic::lang.tab.permissions'
+        label: 'lovata.shopaholic::lang.permission.settings'
+    shopaholic-menu-promo-block:
+        tab: 'lovata.shopaholic::lang.tab.permissions'
+        label: 'lovata.shopaholic::lang.permission.promo_block'
+    shopaholic-menu-currency:
+        tab: 'lovata.shopaholic::lang.tab.permissions'
+        label: 'lovata.shopaholic::lang.permission.currency'
+    shopaholic-menu-tax:
+        tab: 'lovata.shopaholic::lang.tab.permissions'
+        label: 'lovata.shopaholic::lang.permission.tax'
+    shopaholic-menu-price-type:
+        tab: 'lovata.shopaholic::lang.tab.permissions'
+        label: 'lovata.shopaholic::lang.permission.price_type'
+    shopaholic-menu-measure:
+        tab: 'lovata.shopaholic::lang.tab.permissions'
+        label: 'lovata.shopaholic::lang.permission.measure'
+    shopaholic-menu-import-xml-file:
+        tab: 'lovata.shopaholic::lang.tab.permissions'
+        label: 'lovata.shopaholic::lang.permission.import_xml_file'

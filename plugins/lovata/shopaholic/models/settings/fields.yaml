@@ -1,0 +1,117 @@
+tabs:
+    fields:
+        check_offer_active:
+            tab: lovata.toolbox::lang.tab.settings
+            span: left
+            label: lovata.shopaholic::lang.field.check_offer_active
+            type: checkbox
+        allow_negative_offer_quantity:
+            tab: lovata.toolbox::lang.tab.settings
+            span: left
+            label: lovata.shopaholic::lang.field.allow_negative_offer_quantity
+            type: checkbox
+        price_include_tax:
+            tab: lovata.shopaholic::lang.tab.taxes
+            span: left
+            type: checkbox
+            label: lovata.shopaholic::lang.field.price_include_tax
+        formula_calculate_discount_from_price:
+            tab: lovata.shopaholic::lang.tab.taxes
+            label: lovata.shopaholic::lang.settings.formula_calculate_discount_from_price
+            span: left
+            type: radio
+            options:
+                discount_from_backend_price: lovata.shopaholic::lang.settings.formula_calculation_from_backend_price
+                discount_from_price_without_tax: lovata.shopaholic::lang.settings.formula_calculation_from_price_without_tax
+                discount_from_price_with_tax: lovata.shopaholic::lang.settings.formula_calculation_from_price_with_tax
+        dimensions_measure:
+            label: lovata.shopaholic::lang.field.dimensions_measure
+            tab: lovata.shopaholic::lang.tab.dimensions
+            type: dropdown
+            emptyOption: lovata.toolbox::lang.field.empty
+            span: left
+        weight_measure:
+            label: lovata.shopaholic::lang.field.weight_measure
+            tab: lovata.shopaholic::lang.tab.dimensions
+            type: dropdown
+            emptyOption: lovata.toolbox::lang.field.empty
+            span: left
+        measure_of_unit:
+            label: lovata.shopaholic::lang.field.measure_of_unit
+            tab: lovata.shopaholic::lang.tab.dimensions
+            type: dropdown
+            emptyOption: lovata.toolbox::lang.field.empty
+            span: left
+        hide_brand_import_from_csv:
+            label: lovata.shopaholic::lang.field.hide_brand_import_from_csv
+            tab: lovata.shopaholic::lang.tab.import_setting
+            type: checkbox
+            span: left
+        hide_brand_import_from_xml:
+            label: lovata.shopaholic::lang.field.hide_brand_import_from_xml
+            tab: lovata.shopaholic::lang.tab.import_setting
+            type: checkbox
+            span: right
+        hide_category_import_from_csv:
+            label: lovata.shopaholic::lang.field.hide_category_import_from_csv
+            tab: lovata.shopaholic::lang.tab.import_setting
+            type: checkbox
+            span: left
+        hide_category_import_from_xml:
+            label: lovata.shopaholic::lang.field.hide_category_import_from_xml
+            tab: lovata.shopaholic::lang.tab.import_setting
+            type: checkbox
+            span: right
+        hide_product_import_from_csv:
+            label: lovata.shopaholic::lang.field.hide_product_import_from_csv
+            tab: lovata.shopaholic::lang.tab.import_setting
+            type: checkbox
+            span: left
+        hide_product_import_from_xml:
+            label: lovata.shopaholic::lang.field.hide_product_import_from_xml
+            tab: lovata.shopaholic::lang.tab.import_setting
+            type: checkbox
+            span: right
+        hide_offer_import_from_csv:
+            label: lovata.shopaholic::lang.field.hide_offer_import_from_csv
+            tab: lovata.shopaholic::lang.tab.import_setting
+            type: checkbox
+            span: left
+        hide_offer_import_from_xml:
+            label: lovata.shopaholic::lang.field.hide_offer_import_from_xml
+            tab: lovata.shopaholic::lang.tab.import_setting
+            type: checkbox
+            span: right
+        hide_price_import_from_xml:
+            label: lovata.shopaholic::lang.field.hide_price_import_from_xml
+            tab: lovata.shopaholic::lang.tab.import_setting
+            type: checkbox
+            span: right
+        default_product_page_id:
+            label: lovata.shopaholic::lang.field.default_product_page
+            tab: lovata.shopaholic::lang.tab.page_settings
+            type: dropdown
+            span: left
+            emptyOption: lovata.toolbox::lang.field.empty
+            options: getPageIdListOptions
+        default_category_page_id:
+            label: lovata.shopaholic::lang.field.default_category_page
+            tab: lovata.shopaholic::lang.tab.page_settings
+            type: dropdown
+            span: left
+            emptyOption: lovata.toolbox::lang.field.empty
+            options: getPageIdListOptions
+        default_brand_page_id:
+            label: lovata.shopaholic::lang.field.default_brand_page
+            tab: lovata.shopaholic::lang.tab.page_settings
+            type: dropdown
+            span: left
+            emptyOption: lovata.toolbox::lang.field.empty
+            options: getPageIdListOptions
+        default_promo_block_page_id:
+            label: lovata.shopaholic::lang.field.default_promo_block_page
+            tab: lovata.shopaholic::lang.tab.page_settings
+            type: dropdown
+            span: left
+            emptyOption: lovata.toolbox::lang.field.empty
+            options: getPageIdListOptions

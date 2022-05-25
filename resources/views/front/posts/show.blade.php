@@ -40,8 +40,8 @@
                             <div class="meta-bottom">
                                 <div class="entry-tags meta-blk">
                                     <span class="tagtext">Category</span>
-                                    <a
-                                        href="{{ route('categories.view', $post->categories->first()->id) }}">{{ $post->categories->first()->title }}</a>
+
+   <a href="{{ route('categories.view', $post->categories->first()->id) }}">{{ $post->categories->first()->title }}</a>
                                 </div>
 
                             </div>

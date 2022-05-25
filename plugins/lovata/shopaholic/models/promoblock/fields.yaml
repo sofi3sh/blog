@@ -1,0 +1,94 @@
+fields:
+    active:
+        label: 'lovata.toolbox::lang.field.active'
+        span: left
+        default: 1
+        type: switch
+    name:
+        label: 'lovata.toolbox::lang.field.name'
+        span: left
+        required: 1
+        type: text
+    slug:
+        label: 'lovata.toolbox::lang.field.slug'
+        span: right
+        required: 1
+        preset:
+            field: name
+            type: slug
+        type: text
+tabs:
+    fields:
+        type:
+            label: 'lovata.toolbox::lang.field.type'
+            tab: 'lovata.toolbox::lang.tab.settings'
+            span: left
+            type: dropdown
+        code:
+            label: 'lovata.toolbox::lang.field.code'
+            tab: 'lovata.toolbox::lang.tab.settings'
+            span: right
+            type: text
+        date_begin:
+            label: 'lovata.toolbox::lang.field.date_begin'
+            tab: 'lovata.toolbox::lang.tab.settings'
+            span: left
+            type: datepicker
+        date_end:
+            label: 'lovata.toolbox::lang.field.date_end'
+            tab: 'lovata.toolbox::lang.tab.settings'
+            span: right
+            type: datepicker
+        preview_text:
+            label: 'lovata.toolbox::lang.field.preview_text'
+            size: large
+            span: full
+            type: textarea
+            tab: 'lovata.toolbox::lang.tab.description'
+        description:
+            label: 'lovata.toolbox::lang.field.description'
+            size: giant
+            span: full
+            type: richeditor
+            tab: 'lovata.toolbox::lang.tab.description'
+        preview_image:
+            label: 'lovata.toolbox::lang.field.preview_image'
+            mode: image
+            fileTypes: jpg,jpeg,bmp,png,webp,gif,svg
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'lovata.toolbox::lang.tab.images'
+        icon:
+            label: 'lovata.toolbox::lang.field.icon'
+            mode: image
+            fileTypes: jpg,jpeg,bmp,png,webp,gif,svg
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: right
+            type: fileupload
+            tab: 'lovata.toolbox::lang.tab.images'
+        images:
+            label: 'lovata.toolbox::lang.field.images'
+            mode: image
+            fileTypes: jpg,jpeg,bmp,png,webp,gif,svg
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'lovata.toolbox::lang.tab.images'
+        product:
+            span: full
+            context:
+            - update
+            - preview
+            type: partial
+            path: ~/plugins/lovata/shopaholic/controllers/promoblocks/_product.htm
+            tab: 'lovata.shopaholic::lang.menu.product'

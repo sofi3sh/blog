@@ -23,9 +23,9 @@
                         <span></span>
                         <span></span>
                     </div> --}}
-                    @foreach ($category->posts as $post)
+                    @foreach ($posts as $post)
 
-                    @endforeach
+
                     <article class="brick entry" data-aos="fade-up">
 
                         <div class="entry__thumb">
@@ -61,7 +61,7 @@
                     </article> <!-- end article -->
 
                 </div> <!-- end brick-wrapper -->
-
+                @endforeach
             </div> <!-- end masonry -->
 
         </div> <!-- end s-bricks -->

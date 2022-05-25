@@ -43,7 +43,7 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {       
+    {
         // dd($request);
         if($request->has('image')){
             $this->uploadImage($request);
@@ -99,7 +99,7 @@ class PostController extends Controller
         $post->body     = $request->body;
         $post->save();
 
-        return back()->with('message', 'Post updated successfully');
+        return redirect()->route('posts.index')->with('message', 'Post created successfully');
     }
 
     /**
@@ -117,7 +117,7 @@ class PostController extends Controller
     public function uploadImage($request){
         $image = $request->file('image');
         $imageName = time().$image->getClientOriginalName();
-        // add the new file 
+        // add the new file
         $image->move(public_path('images'),$imageName);
         $request->merge(['image' => $imageName]);
         // dd($request);

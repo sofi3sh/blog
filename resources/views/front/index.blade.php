@@ -13,12 +13,12 @@
                             <div class="column">
                                 <div class="s-hero__slide-meta">
                                     <span class="cat-links">
-                                        <a href="#0">{{ $post->categories->first()->title }}</a>
+                                        <a href="#">{{ $categories->first()->title }}</a>
                                     </span>
                                     <span class="byline">
                                         Posted by
                                         <span class="author">
-                                            <a href="#0">{{ $post->user->name }}</a>
+                                            <a href="#">{{ $post->user->name }}</a>
                                         </span>
                                     </span>
                                 </div>
@@ -80,11 +80,15 @@
                                         <div class="entry__meta">
                                             <span class="byline">By:
                                                 <span class='author'>
-                                                    <a href="#">{{ $post->user->name }}</a>
+
+                                                        <a href="#">{{$post->user()->first()->name}}</a>
+
+
                                                 </span>
                                             </span>
                                             <span class="cat-links">
-                                                <a href="#">{{ $post->categories->first()->title }}</a>
+
+                                                 <a href="#">{{$categories->first()->title }}</a>
                                             </span>
                                         </div>
                                     </div>

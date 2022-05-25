@@ -1,0 +1,21 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+    active:
+        label: 'lovata.toolbox::lang.field.active'
+        type: switch
+        conditions:
+            - active <> true
+            - active = true
+    category:
+        label: 'lovata.toolbox::lang.field.category'
+        modelClass: Lovata\Shopaholic\Models\Category
+        nameFrom: name
+        scope: getByCategories
+    brand:
+        label: 'lovata.shopaholic::lang.field.brand'
+        modelClass: Lovata\Shopaholic\Models\Brand
+        nameFrom: name
+        conditions: brand_id in (:filtered)

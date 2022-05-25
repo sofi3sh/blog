@@ -1,0 +1,178 @@
+<?php return [
+    'plugin'      => [
+        'name'        => 'Shopaholic',
+        'description' => 'Plugin gratuit de comerț electronic cu un set mare de extensii.',
+    ],
+    'field'       => [
+        'vendor_code'         => 'Cod furnizor',
+        'price'               => 'Pret',
+        'old_price'           => 'Pret Vechi',
+        'quantity'            => 'Cantitate',
+        'brand'               => 'Marca',
+        'offer'               => 'Oferte',
+        'currency'            => 'Valuta',
+        'check_offer_active'  => 'Când primiți o listă de produse active, verificați dacă există oferte active',
+        'additional_category' => 'Categorii aditionale',
+        'promo_block_type'    => 'Bloc promotional cu listă de produse',
+        'promo_block'         => 'Bloc promotional',
+        'product_id'          => 'Id produs',
+        'rate'                => 'Taxa',
+        'tax_is_global'       => 'Taxa se va aplica tuturor produselor',
+        'tax_percent'         => 'Procentul de impozitare',
+        'tax'                 => 'Taxa',
+        'without_tax'         => 'Fara taxa',
+        'with_tax'            => 'Cu taxa',
+        'countries'           => 'Tari',
+        'states'              => 'Judete',
+        'main_price_type'     => 'Pretul principal',
+        'price_include_tax'   => 'Pretul include taxe',
+        'discount_price'      => 'Pret redus',
+    ],
+    'menu'        => [
+        'main'                      => 'Catalog',
+        'categories'                => 'Categorii',
+        'product'                   => 'Produse',
+        'brands'                    => 'Branduri',
+        'shop_catalog'              => 'Catalog produse',
+        'shop_category'             => 'Categoria produsului',
+        'all_shop_categories'       => 'Toate categoriile produselor',
+        'promo_block'               => 'Blocuri promotionale',
+        'promo'                     => 'Promotii',
+        'price_type'                => 'Tipuri preturi',
+        'price_type_description'    => 'Gestionați tipurile de pret',
+        'currency'                  => 'Valuta',
+        'currency_description'      => 'Gestionati monedele',
+        'tax'                       => 'Taxe',
+        'tax_description'           => 'Gestionati taxe',
+        'configuration'             => 'Catalog setari',
+        'main_settings'             => 'Setari de baza',
+        'main_settings_description' => 'Setările de baza ale catalogului dvs.',
+    ],
+    'tab'         => [
+        'offer'       => 'Oferte comerciale',
+        'price'       => 'Preturi',
+        'permissions' => 'Shopaholic',
+        'settings'    => 'Configurare catalog',
+        'taxes'       => 'Taxe',
+    ],
+    'category'    => [
+        'name'         => 'categorie',
+        'list_title'   => 'Lista categorii',
+        'import_title' => 'Importeaza categorii',
+        'export_title' => 'Exporteaza categorii',
+    ],
+    'brand'       => [
+        'name'         => 'marca',
+        'list_title'   => 'Lista marci',
+        'import_title' => 'Importeaza marci',
+        'export_title' => 'Exporteaza marci',
+    ],
+    'product'     => [
+        'name'         => 'produs',
+        'list_title'   => 'Lista produse',
+        'import_title' => 'Importeaza produse',
+        'export_title' => 'Exporteaza produse',
+    ],
+    'offer'       => [
+        'name'         => 'oferta',
+        'list_title'   => 'Lista oferte',
+        'import_title' => 'Importeaza oferte',
+        'export_title' => 'Exporteaza oferte',
+    ],
+    'promo_block' => [
+        'name'       => 'bloc promotonal',
+        'list_title' => 'Lista blocuri promotionale',
+    ],
+    'price_type'  => [
+        'name'       => 'tip pret',
+        'list_title' => 'Lista tipuri pret',
+    ],
+    'currency'    => [
+        'name'       => 'valuta',
+        'list_title' => 'Lista valuta',
+    ],
+    'tax'         => [
+        'name'       => 'taxa',
+        'list_title' => 'Lista taxe',
+    ],
+    'country'     => [
+        'name'       => 'tara',
+        'list_title' => 'Lista tari',
+    ],
+    'state'       => [
+        'name'       => 'judet',
+        'list_title' => 'Lista judete',
+    ],
+    'component'   => [
+
+        //Product components
+        'product_page_name'            => 'Pagina produs',
+        'product_page_description'     => 'Obțineti date pentru pagina produsului',
+        'product_data_name'            => 'Datele produselor',
+        'product_data_description'     => 'Obțineti date despre produs după ID',
+        'product_list_name'            => 'Lista produse',
+        'product_list_description'     => 'Obtineti lista de produse',
+
+        //Brand components
+        'brand_page_name'              => 'Pagina marca',
+        'brand_page_description'       => 'Obtineti date pentru pagina marcii',
+        'brand_data_name'              => 'Data marci',
+        'brand_data_description'       => 'Obtineti date despre marca după ID',
+        'brand_list_name'              => 'Lista marcilor',
+        'brand_list_description'       => 'Obtineti lista de marci',
+
+        //Promo block components
+        'promo_block_page_name'        => 'Pagina blocului promotional',
+        'promo_block_page_description' => 'Obtineti date pentru pagina de bloc promotional',
+        'promo_block_data_name'        => 'Datele blocului promotional',
+        'promo_block_data_description' => 'Obtineti date de blocare promotionala prin ID',
+        'promo_block_list_name'        => 'Lista blocurilor promotionale',
+        'promo_block_list_description' => 'Obtineti lista de blocuri promotionale',
+
+        //Category components
+        'category_page_name'           => 'Pagina categoriei',
+        'category_page_description'    => 'Obtineti date pentru pagina categoriei',
+        'category_data_name'           => 'Date de categorie',
+        'category_data_description'    => 'Obtineti date de categorie după ID',
+        'category_list_name'           => 'Lista categoriilor',
+        'category_list_description'    => 'Obtineti arborele categoriilor',
+
+        //Currency components
+        'currency_list_name'           => 'Lista valute',
+        'currency_list_description'    => 'Descriere lista valute',
+
+        //Common components
+        'breadcrumbs_name'             => 'Url-urile breadcrumbs',
+        'breadcrumbs_description'      => 'Gestioneaza data pentru catalog-ul url-urilor breadcrumbs',
+
+        //Components settings
+        'product_list_sorting'         => 'Sortare default',
+        'sorting_no'                   => 'Fara sortare',
+        'sorting_price_desc'           => 'Scump',
+        'sorting_price_asc'            => 'Ieftin',
+        'sorting_new'                  => 'Nou',
+        'sorting_popularity_desc'      => 'Popular',
+        'sorting_rating_desc'          => 'Bine cotate',
+        'sorting_rating_asc'           => 'Prost cotate',
+        'sorting_date_begin_asc'       => 'Data de incepere (ASC)',
+        'sorting_date_begin_desc'      => 'Data de incepere (DESC)',
+        'sorting_date_end_asc'         => 'Data de sfarsit (ASC)',
+        'sorting_date_end_desc'        => 'Data de sfarsit (DESC)',
+    ],
+    'permission'  => [
+        'category'    => 'Gestionați categorii',
+        'brand'       => 'Gestionați marci',
+        'product'     => 'Gestionați produse',
+        'settings'    => 'Gestionați setarile',
+        'promo_block' => 'Gestionați blocurile promotionale',
+        'currency'    => 'Gestionați tipurile de valuta',
+        'tax'         => 'Gestionați tipurile de taxe',
+        'price_type'  => 'Gestionați tipurile de pret',
+    ],
+    'message'     => [
+        'import_additional_category_info' => 'Setati lista de categorii de produse suplimentare separate prin virgule.',
+    ],
+    'button'      => [
+        'import_offer_button' => 'Importeaza oferte din fiser CSV',
+    ],
+];

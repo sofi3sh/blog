@@ -15,6 +15,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
             $table->foreignId('user_id')
                   ->constrained()
                   ->onDelete('cascade')
@@ -27,30 +28,6 @@ class CreatePostsTable extends Migration
             $table->string('image');
             $table->timestamps();
         });
-
-        Schema::create('category_post', function(Blueprint $table) {
-            $table->id();
-            $table->foreignId('category_id')
-                  ->constrained()
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
-            $table->foreignId('post_id')
-                  ->constrained()
-                  ->onUpdate('cascade')
-                  ->onDelete('cascade');
-        });
-
-        Schema::create('post_tag', function(Blueprint $table) {
-            $table->id();
-            $table->foreignId('post_id')
-                  ->constrained()
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
-            $table->foreignId('tag_id')
-                  ->constrained()
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
-        });
     }
 
     /**
@@ -61,7 +38,5 @@ class CreatePostsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('posts');
-        Schema::dropIfExists('category_post');
-        Schema::dropIfExists('post_tag');
     }
 }

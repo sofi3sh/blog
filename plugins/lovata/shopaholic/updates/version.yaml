@@ -1,0 +1,138 @@
+1.0.0:
+    - 'Initialize plugin.'
+    - create_table_categories.php
+    - create_table_products.php
+    - create_table_offers.php
+    - create_table_brands.php
+1.1.0:
+    - 'Add integration with "Popularity for Shopaholic" and "Tags for Shopaholic" plugins'
+1.2.0:
+    - 'preview_image, images fields in item classes returns \System\Models\File class objects. Add integration with "Reviews for Shopaholic" plugin'
+1.2.1:
+    - 'Remove php short tags from offers/update.htm'
+1.2.2:
+    - 'Add additional cache cleaning after category reordering'
+1.2.3:
+    - 'Adding additional cache cleaning for the sorted list of brands, after the creation of a new brand. Requires Toolbox plugin version 1.3.0 and later.'
+1.3.0:
+    - 'Add menu types for integration with the StaticPage plugin. Add getPageUrl() method to the CategoryItem class. Requires Toolbox plugin version 1.4.0 and later. Thanks for contribution Alvaro Cánepa.'
+1.3.1:
+    - 'Fix: processing of the "nesting" flag for the menu type "catalog"'
+1.4.0:
+    - 'Replace code of product sorting by popularity and rating from Shopaholic to extension plugins. Add event "shopaholic.sorting.get.list" for custom sorting of products. Add integration with "Related products for Shopaholic" and "Accessories for Shopaholic" plugins'
+1.4.1:
+    - 'Update annotations for "Reviews for Shopaholic" plugin. Fix $dates array in Product model. Thanks for contribution Alexander Shapoval.'
+1.5.0:
+    - 'Add integration with "Search for Shopaholic","Sphinx for Shopaholic" plugins'
+1.6.0:
+    - 'Add integration with "Compare for Shopaholic"'
+1.7.0:
+    - 'Added translation into French. Thanks for contribution philmarc.'
+1.8.0:
+    - 'Add integration with "Viewed products for Shopaholic" plugin'
+1.9.0:
+    - 'Add PriceHelperTrait, TraitCached in models. Add active() method to CategoryCollection class. Move PriceHelper class from Shopaholic plugin to Toolbox plugin. Add new store classes. Refactoring *Store, *Item, *Collection classes. Requires Toolbox plugin version 1.10.0 and later.'
+    - seeder_price_format.php
+1.10.0:
+    - 'Adding relation between Product model and additional categories. Adding ability to get list of products by category ID list, by the parent category ID.'
+    - create_table_additional_categories.php
+1.11.0:
+    - 'Adding getPageUrl() method to ProductItem, BrandItem classes.'
+1.11.1:
+    - 'Adding "field.additional_category" value to lang files. Fixed displaying "additional categories" field only for update/preview forms.'
+1.11.2:
+    - 'Fix work with *Store classes in *Handler classes.'
+1.11.3:
+    - 'Fix error in ProductCollection class, if product list by category is empty.'
+1.12.0:
+    - 'Added type returned by methods in AbstractStore * classes'
+1.13.0:
+    - 'Added PromoBlock model. Promo blocks are sections of content that you can place throughout your eCommerce website and advertise products, offers, discounts, campaigns, and other activity. Added PromoBlockData, PromoBlockPage, PromoBlockList components. Added PromoBlockItem, PromoBlockCollection classes.'
+    - create_table_promo_block.php
+    - create_table_promo_block_relation.php
+1.13.1:
+    - 'Added annotations for integration with Coupons for Shopaholic, Discounts for Shopaholic, Campaigns for Shopaholic plugins.'
+1.14.0:
+    - 'Added "additional_category" field to ProductItem class.'
+1.14.1:
+    - 'Remove vendor folder from plugin.'
+1.15.0:
+    - 'Added import product, offers, categories, brands from CSV file in backend. Requires Toolbox plugin version 1.18.0 and later'
+1.16.0:
+    - 'Added block with description about import of product/offer properties from CSV file.'
+1.16.1:
+    - 'Added annotations of filterByDiscount(), filterByQuantity() methods to OfferCollection class.'
+1.17.0:
+    - 'Added Japanese language. Thanks for contribution pikanji.'
+1.18.0:
+    - 'Added German language. Thanks for contribution Gerald.'
+1.19.0:
+    - 'Added translatable slug in Product, Brand, Category, PromoBlock models.'
+1.19.1:
+    - 'Fixed permissions for promo block menu item. Thanks for contribution Andreas Kosmowicz.'
+1.20.0:
+    - 'Added Slovak language. Thanks for contribution vosco88.'
+1.21.0:
+    - 'Added multicurrency. Added taxes. Added price types. Added shopaholic:check.table.integrity artisan command.'
+    - create_table_taxes.php
+    - create_table_tax_category_relation.php
+    - create_table_tax_product_relation.php
+    - create_table_tax_country_relation.php
+    - create_table_tax_state_relation.php
+    - create_table_currency.php
+    - seeder_create_default_currency.php
+    - create_table_price_types.php
+    - create_table_prices.php
+    - update_table_users_add_currency_field.php
+    - seeder_transfer_offer_prices.php
+    - update_table_offers_remove_price_field.php
+1.21.1:
+    - 'Fixed labels for tax settings.'
+1.21.2:
+    - 'Fix error with saving offer without prices.'
+1.22.0:
+    - 'Added customizable import from xml file. Thanks to Rolands Zeltins. His donation made this feature available for everyone.'
+1.22.1:
+    - 'Fixed command shopaholic:import_from_xml.'
+1.22.2:
+    - 'Added "deactivate" fields to config of XmlImportSettings model.'
+1.22.3:
+    - 'Fixed attaching of children categories to parent category in script of import from XML.'
+1.22.4:
+    - 'Removed deleted offers from sorting by price.'
+1.22.5:
+    - 'Fixed bug with deactivating items in import from XML files.'
+1.23.0:
+    - 'Added ability to show catalog with active price type. Added annotations for integration with Subscriptions for Shopaholic plugin.'
+1.23.1:
+    - 'Added step attribute to offer price field in backend view'
+1.24.0:
+    - 'Added support of wildcard params to CategoryPage component. Requires Toolbox plugin version 1.26.0 and later'
+1.24.1:
+    - 'Fixed support of wildcard params in CategoryPage component. Requires Toolbox plugin version 1.26.1 and later'
+1.24.2:
+    - 'Added annotations for Subscriptions for Shopaholic plugin.'
+1.24.3:
+    - 'Added validation of import fields that contains relation IDs.'
+1.25.0:
+    - 'Moved "Measure" model from "Properties for Shopaholic" plugin. Added weight, height, length, width, measure_of_unit, quantity_in_unit fields to Offer model. Added new global settings: size unit measure, weight unit measure, piece unit measure.'
+    - create_table_measure.php
+    - update_table_offers_add_dimensions_field.php
+1.26.0:
+    - 'Added relation to Offer model with Measure model.'
+    - update_table_offers_add_measure_field.php
+1.27.0:
+    - 'Added parent category field to backend in Category model. Thanks for contribution Dinwid.'
+1.27.1:
+    - 'Fixed logic of getting prices in Offer model.'
+1.28.0:
+    - 'Added "with children" param in BrandCollection->category method. Added settings for "default pages". Added "lovata.backend.extend_list_toolbar" event to controllers. Added "icon" field to Brand, Category and PromoBlock models. Added settings "Allow negative offer quantity".'
+    - update_table_offers_change_quantity_field.php
+1.29.0:
+    - 'Added composer.json to plugin'
+1.30.0:
+    - 'Reduced count of database queries, if cache is empty. Requires Toolbox plugin version 1.32.0 and later.'
+1.30.1:
+    - 'Added "lazy" param to tabs config of Products controller'
+1.30.2:
+    - 'Fixed bug with category tree in v2'

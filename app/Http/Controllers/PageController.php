@@ -22,14 +22,16 @@ class PageController extends Controller
     public function posts(){
         return view('posts.index');
     }
-    
+
     public function showPost(Post $post){
         $post = $post->load('user','categories');
         return view('front.posts.show', compact('post'));
     }
 
     public function showCategory(Category $category){
+
         $posts = $category->posts()->get();
+
         return view('front.categories.show', compact('category', 'posts'));
     }
 }
